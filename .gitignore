@@ -1,0 +1,8 @@
+# Private notes: this repo is public, keep these on my computer only
+AGENTS.md
+CLAUDE.md
+LEARNING.md
+
+.env
+__pycache__/
+.venv/
