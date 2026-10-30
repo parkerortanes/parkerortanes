@@ -1,0 +1,54 @@
+# ─────────────────────────────────────────────────────────────
+#  Your career data. This is the ONLY file you need to edit.
+#  Push a change here and your README rebuilds within a minute.
+#  Everything in this file is PUBLIC once it's on GitHub.
+# ─────────────────────────────────────────────────────────────
+
+name: Parker Ortanes
+github_username: parkerortanes
+tagline: Finance & Accounting @ CU Boulder Leeds '28
+location: Boulder, CO
+
+links:
+  LinkedIn: https://www.linkedin.com/in/parker-ortanes/
+  # Email: mailto:you@example.com                       # optional
+
+about: >
+  Finance & Accounting student at the Leeds School of Business (Leeds Scholars).
+  Interested in investment banking, valuation, and building tools that make
+  financial work faster.
+
+# Dates drive everything below. The script compares them to today and
+# automatically labels each item "Incoming", "Current", or moves it to past.
+# Use YYYY-MM-DD. Leave `end` blank for open-ended roles.
+
+experience:
+  - role: Investment Banking Summer Analyst
+    org: Canaccord Genuity
+    team: Consumer Group
+    location: New York, NY
+    start: 2027-05-01
+    end: 2027-08-31
+
+education:
+  - school: University of Colorado Boulder, Leeds School of Business
+    detail: B.S. Business, Finance & Accounting · Leeds Scholars
+    start: 2024-08-20
+    end: 2028-05-15
+  - school: Universidad Carlos III de Madrid
+    detail: Exchange semester
+    location: Madrid, Spain
+    start: 2027-01-26
+    end: 2027-05-30
+
+skills:
+  - Financial modeling
+  - Valuation (DCF, comps)
+  - Excel
+  - Python
+
+# Big career updates. Newest first doesn't matter; the script sorts them.
+# Anything from the last 45 days gets a 🆕 badge automatically.
+news:
+  - date: 2026-10-01
+    text: Accepted a Summer 2027 Investment Banking Analyst offer at Canaccord Genuity (Consumer Group, New York)
