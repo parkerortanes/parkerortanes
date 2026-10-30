@@ -42,7 +42,7 @@ Finance & Accounting student at the Leeds School of Business (Leeds Scholars). I
 <!-- START:activity -->
 ## 🛠️ What I've been building
 
-_Loading on first run…_
+_Nothing public yet. Check back soon._
 <!-- END:activity -->
 
 ---
