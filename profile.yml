@@ -6,6 +6,7 @@
 
 name: Parker Ortanes
 github_username: parkerortanes
+ticker: PRKR    # your 'stock symbol' on the banner
 tagline: Finance & Accounting @ CU Boulder Leeds '28
 location: Boulder, CO
 
@@ -21,6 +22,7 @@ about: >
 # Dates drive everything below. The script compares them to today and
 # automatically labels each item "Incoming", "Current", or moves it to past.
 # Use YYYY-MM-DD. Leave `end` blank for open-ended roles.
+# Optional `short:` = a shorter name used on the banner image at the top.
 
 experience:
   - role: Investment Banking Summer Analyst
@@ -32,10 +34,12 @@ experience:
 
 education:
   - school: University of Colorado Boulder, Leeds School of Business
+    short: CU Boulder, Leeds School of Business
     detail: B.S. Business, Finance & Accounting · Leeds Scholars
     start: 2024-08-20
     end: 2028-05-15
   - school: Universidad Carlos III de Madrid
+    short: UC3M Madrid (exchange)
     detail: Exchange semester
     location: Madrid, Spain
     start: 2027-01-26

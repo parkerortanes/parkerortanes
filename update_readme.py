@@ -17,9 +17,12 @@ from pathlib import Path
 
 import yaml
 
+from banner import write_banner
+
 ROOT = Path(__file__).parent
 README = ROOT / "README.md"
 PROFILE = ROOT / "profile.yml"
+BANNER = ROOT / "assets" / "banner.svg"
 NEW_BADGE_DAYS = 45
 TODAY = date.today()
 
@@ -185,7 +188,8 @@ def main():
     stamp = datetime.now(timezone.utc).strftime("%b %d, %Y")
     text = replace_section(text, "updated", f"<sub>🤖 Auto-updated {stamp}</sub>")
     README.write_text(text)
-    print("README.md updated")
+    write_banner(p, BANNER, TODAY)
+    print("README.md and banner updated")
 
 
 if __name__ == "__main__":
