@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.svg" alt="Parker Ortanes, Finance & Accounting at CU Boulder" width="100%"></p>
+
 <!-- START:header -->
 # Hi, I'm Parker Ortanes 👋
 
