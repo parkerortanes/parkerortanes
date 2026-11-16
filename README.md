@@ -21,7 +21,7 @@ Finance & Accounting student at the Leeds School of Business (Leeds Scholars). I
 <!-- START:news -->
 ## 📰 Latest updates
 
-- **Oct 2026**: Accepted a Summer 2027 Investment Banking Analyst offer at Canaccord Genuity (Consumer Group, New York) 🆕
+- **Oct 2026**: Accepted a Summer 2027 Investment Banking Analyst offer at Canaccord Genuity (Consumer Group, New York)
 <!-- END:news -->
 
 <!-- START:experience -->
@@ -44,10 +44,10 @@ Finance & Accounting student at the Leeds School of Business (Leeds Scholars). I
 <!-- START:activity -->
 ## 🛠️ What I've been building
 
-- [**ai-radar-digest**](https://github.com/parkerortanes/ai-radar-digest): Daily AI Radar digest: new AI tools, skills and MCP servers (published automatically) · `HTML` · updated Nov 14
+- [**ai-radar-digest**](https://github.com/parkerortanes/ai-radar-digest): Daily AI Radar digest: new AI tools, skills and MCP servers (published automatically) · `HTML` · updated Nov 15
 <!-- END:activity -->
 
 ---
 <!-- START:updated -->
-<sub>🤖 Auto-updated Nov 15, 2026</sub>
+<sub>🤖 Auto-updated Nov 16, 2026</sub>
 <!-- END:updated -->
