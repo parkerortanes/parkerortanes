@@ -44,10 +44,12 @@ Finance & Accounting student at the Leeds School of Business (Leeds Scholars). I
 <!-- START:activity -->
 ## 🛠️ What I've been building
 
+- [**deep-cut**](https://github.com/parkerortanes/deep-cut): Deep Cut: a free daily general-knowledge game · `JavaScript` · updated Nov 18
+- [**deadline-game**](https://github.com/parkerortanes/deadline-game): Deadline: a free daily browser game (closest year without going over) · `JavaScript` · updated Nov 18
 - [**ai-radar-digest**](https://github.com/parkerortanes/ai-radar-digest): Daily AI Radar digest: new AI tools, skills and MCP servers (published automatically) · `HTML` · updated Nov 17
 <!-- END:activity -->
 
 ---
 <!-- START:updated -->
-<sub>🤖 Auto-updated Nov 17, 2026</sub>
+<sub>🤖 Auto-updated Nov 18, 2026</sub>
 <!-- END:updated -->
