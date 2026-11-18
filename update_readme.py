@@ -147,11 +147,13 @@ def build_experience(p):
     return "\n".join(out)
 
 
-def build_activity(user, repos, events):
+def build_activity(user, repos, events, projects=None):
     out = ["## 🛠️ What I've been building", ""]
-    if not repos:
+    for project in projects or []:
+        out.append(f"- [**{project['name']}**]({project['url']}): {project['description']}")
+    if not repos and not projects:
         out.append("_Nothing public yet. Check back soon._")
-    for r in repos[:5]:
+    for r in ([] if projects else repos[:5]):
         pushed = datetime.strptime(r["pushed_at"], "%Y-%m-%dT%H:%M:%SZ").date()
         desc = f": {r['description']}" if r.get("description") else ""
         lang = f" · `{r['language']}`" if r.get("language") else ""
@@ -169,25 +171,28 @@ def build_activity(user, repos, events):
 
 # ── main ─────────────────────────────────────────────────────
 def main():
-    p = yaml.safe_load(PROFILE.read_text())
+    p = yaml.safe_load(PROFILE.read_text(encoding="utf-8"))
     user = os.environ.get("GH_USERNAME") or p["github_username"]
-    text = README.read_text()
+    text = README.read_text(encoding="utf-8")
 
     text = replace_section(text, "header", build_header(p))
     text = replace_section(text, "now", build_now(p))
     text = replace_section(text, "news", build_news(p))
     text = replace_section(text, "experience", build_experience(p))
 
+    if p.get("projects"):
+        text = replace_section(text, "activity", build_activity(user, [], [], p["projects"]))
+
     if "--offline" not in sys.argv:
         try:
             repos, events = github_activity(user)
-            text = replace_section(text, "activity", build_activity(user, repos, events))
+            text = replace_section(text, "activity", build_activity(user, repos, events, p.get("projects")))
         except Exception as e:  # keep the old activity block rather than fail
             print(f"warning: GitHub API failed ({e}); keeping previous activity section")
 
     stamp = datetime.now(timezone.utc).strftime("%b %d, %Y")
     text = replace_section(text, "updated", f"<sub>🤖 Auto-updated {stamp}</sub>")
-    README.write_text(text)
+    README.write_text(text, encoding="utf-8")
     write_banner(p, BANNER, TODAY)
     print("README.md and banner updated")
 

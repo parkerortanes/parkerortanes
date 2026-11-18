@@ -51,6 +51,14 @@ skills:
   - Excel
   - Python
 
+projects:
+  - name: deadline
+    url: https://parkerortanes.github.io/deadline-game/
+    description: A daily game — get close to a target year without going over.
+  - name: Deep Cut
+    url: https://parkerortanes.github.io/deep-cut/
+    description: A daily general-knowledge game — choose 5 of 10 questions with hidden rarity scores.
+
 # Big career updates. Newest first doesn't matter; the script sorts them.
 # Anything from the last 45 days gets a 🆕 badge automatically.
 news:
